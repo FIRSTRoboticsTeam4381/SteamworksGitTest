@@ -6,6 +6,7 @@
 #include <LiveWindow/LiveWindow.h>
 #include <SmartDashboard/SendableChooser.h>
 #include <SmartDashboard/SmartDashboard.h>
+#include "CANTalon.h"
 
 class Robot: public frc::IterativeRobot {
 public:
