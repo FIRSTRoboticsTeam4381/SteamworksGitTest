@@ -7,7 +7,7 @@
 // AND ONE MORE
 // one more
 
-// kill me now
+// kill s
 
 
 #include <IterativeRobot.h>
