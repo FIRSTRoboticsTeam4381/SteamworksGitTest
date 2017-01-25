@@ -1,8 +1,20 @@
 #include <iostream>
 #include <memory>
 #include <string>
+#include <TalonSRX.h>
+#include <Joystick.h>
+#include <CoreyDrive.h>
+#include <RobotDrive.h>
+
 // comment this
 // another comment
+// add another comment
+// AND ONE MORE
+// one more
+
+// kill s
+
+
 #include <IterativeRobot.h>
 #include <LiveWindow/LiveWindow.h>
 #include <SmartDashboard/SendableChooser.h>
@@ -53,7 +65,7 @@ public:
 	}
 
 	void TeleopPeriodic() {
-
+		drive.Drive(stick);
 	}
 
 	void TestPeriodic() {
@@ -66,6 +78,8 @@ private:
 	const std::string autoNameDefault = "Default";
 	const std::string autoNameCustom = "My Auto";
 	std::string autoSelected;
+	CoreyDrive drive;
+	frc::Joystick stick{0};
 };
 
 START_ROBOT_CLASS(Robot)
